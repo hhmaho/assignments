@@ -4,10 +4,16 @@ import UserInput from "./components/UserInput";
 import UserOutput from "./components/UserOutput";
 
 class App extends Component {
+  state = {
+    persons: [{ name: "Olivia" }, { name: "Tim" }, { name: "Lisa" }]
+  };
   render() {
     return (
       <div className="App">
-        <UserInput userName="Olivia">Admission price: EUR 5.</UserInput>
+        <button>Visitor</button>
+        <UserInput userName={this.state.persons[0]}>
+          Admission price: EUR 5.
+        </UserInput>
         <UserOutput />
       </div>
     );
