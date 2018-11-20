@@ -1,10 +1,12 @@
 import React from "react";
 
 const userInput = props => {
-  console.log(props);
   return (
     <div>
-      <p>here comes an input element.</p>
+      <p>
+        {props.userName} orders {Math.floor(Math.random() * 5)} tickets.{" "}
+      </p>
+      <p>{props.children}</p>
     </div>
   );
 };

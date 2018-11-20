@@ -1,10 +1,9 @@
 import React from "react";
 
-const userOutput = props => {
-  console.log(props);
+const userOutput = () => {
   return (
     <div>
-      <p>Hello, this is the first paragragraph in my useroutputcomponent.</p>
+      <p>Welcome to the exhibition.</p>
       <p>Hello this is the second paragragraph in my useroutputcomponent.</p>
     </div>
   );
