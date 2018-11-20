@@ -1,14 +1,14 @@
 import React from "react";
+import "./userInput.css";
 
 const userInput = props => {
   return (
-    <div>
-      <p>
-        {props.userName} orders {Math.floor(Math.random() * 5)} tickets.{" "}
-      </p>
+    <div className="Person">
+      <p>Welcome {props.name}.</p>
       {/* children refers to any element 
         between opening and closing tag of the component (ref. App.js)*/}
       <p>{props.children}</p>
+      <input type="text" onChange={props.changed} />
     </div>
   );
 };

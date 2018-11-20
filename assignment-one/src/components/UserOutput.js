@@ -1,10 +1,10 @@
 import React from "react";
 
-const userOutput = () => {
+const userOutput = props => {
   return (
     <div>
-      <p>Welcome to the exhibition.</p>
-      <p>Hello this is the second paragragraph in my useroutputcomponent.</p>
+      <p>The exhibition will close on 7pm.</p>
+      <p onClick={props.click}>Change visitors.</p>
     </div>
   );
 };
