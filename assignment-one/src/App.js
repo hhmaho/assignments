@@ -11,9 +11,10 @@ class App extends Component {
   // define method for button Visitor, arrowfunction
   switchNameHandler = addClientNumber => {
     //
+    console.log(addClientNumber);
     this.setState({
       persons: [
-        { name: addClientNumber },
+        { name: "addClientNumber" },
         { name: "Tim (clientnumber 0012)" },
         { name: "Lisa (clientnumber 0013)" }
       ]
